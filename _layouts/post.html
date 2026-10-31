@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% assign meses = "janeiro,fevereiro,março,abril,maio,junho,julho,agosto,setembro,outubro,novembro,dezembro" | split: "," %}
+{% assign m = page.date | date: "%-m" | minus: 1 %}
+<article class="post">
+  <span class="data">{{ page.date | date: "%-d" }} de {{ meses[m] }} de {{ page.date | date: "%Y" }}</span>
+  <h1>{{ page.title }}</h1>
+  <div class="corpo">
+    {{ content }}
+  </div>
+  <a class="voltar" href="{{ '/' | relative_url }}">← todos os textos</a>
+</article>

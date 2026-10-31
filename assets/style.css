@@ -1,0 +1,85 @@
+:root {
+  --papel: #F4ECE0;
+  --salvia: #C3CBB0;
+  --musgo: #7E8C68;
+  --cafe-leite: #D8BFA3;
+  --terracota: #C4876A;
+  --madeira: #8A6347;
+  --tinta: #3A2E28;
+  --tinta-suave: #6B5A4E;
+}
+* { box-sizing: border-box; }
+html { background: var(--papel); }
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 640px; margin: 0 auto; padding: 0 20px; }
+a { color: var(--musgo); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--madeira); }
+
+.topo { padding: 56px 0 32px; border-bottom: 1px solid var(--cafe-leite); }
+.marca {
+  font-family: "League Gothic", sans-serif;
+  font-size: 64px; line-height: 1; letter-spacing: 0.5px;
+  color: var(--madeira); text-decoration: none;
+}
+.marca:hover { color: var(--madeira); }
+.lema {
+  margin: 10px 0 0; color: var(--tinta-suave);
+  font-family: "Fraunces", serif; font-style: italic; font-size: 17px;
+}
+
+main { padding: 40px 0 64px; }
+
+.lista { list-style: none; margin: 0; padding: 0; }
+.lista li { padding: 22px 0; border-bottom: 1px dashed var(--cafe-leite); }
+.lista li:last-child { border-bottom: 0; }
+.lista a { text-decoration: none; }
+.lista .titulo {
+  font-family: "League Gothic", sans-serif;
+  font-size: 34px; line-height: 1.1; color: var(--madeira);
+}
+.lista a:hover .titulo { color: var(--terracota); }
+.data {
+  display: block; font-size: 14px; color: var(--musgo);
+  letter-spacing: 0.3px; margin-bottom: 4px;
+}
+.resumo { margin: 6px 0 0; color: var(--tinta-suave); font-size: 16px; }
+
+.post h1 {
+  font-family: "League Gothic", sans-serif; font-weight: 400;
+  font-size: 52px; line-height: 1.05; color: var(--madeira);
+  margin: 0 0 6px;
+}
+.post .corpo { margin-top: 36px; }
+.post .corpo p { margin: 0 0 1.4em; }
+.post blockquote, .post .destaque {
+  margin: 2em 0; padding: 4px 0 4px 20px;
+  border-left: 2px solid var(--terracota);
+  font-family: "Fraunces", serif; font-style: italic;
+  font-size: 21px; color: var(--madeira);
+}
+.post blockquote p { margin: 0; }
+.voltar { display: inline-block; margin-top: 40px; font-size: 15px; }
+
+.rodape {
+  padding: 28px 0 48px; border-top: 1px solid var(--cafe-leite);
+  font-size: 14px; color: var(--tinta-suave);
+}
+.rodape .ponto {
+  display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--salvia); margin: 0 8px 1px; vertical-align: middle;
+}
+
+@media (max-width: 480px) {
+  body { font-size: 17px; }
+  .topo { padding-top: 40px; }
+  .marca { font-size: 54px; }
+  .post h1 { font-size: 44px; }
+}

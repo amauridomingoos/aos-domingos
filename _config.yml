@@ -1,0 +1,17 @@
+title: aos domingos
+description: textos escritos devagar, pra guardar
+author: Amauri Domingos
+lang: pt-BR
+baseurl: "/aos-domingos"
+url: "https://amauridomingoos.github.io"
+permalink: /:year/:month/:day/:title/
+timezone: America/Sao_Paulo
+markdown: kramdown
+kramdown:
+  hard_wrap: true
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
